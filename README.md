@@ -11,5 +11,13 @@ This project aims to provide resources and support for individuals dealing with 
 - Anonymous chat for seeking immediate help
 - Tools for tracking mood, emotions, and activities
 - Professional directory for locating mental health professionals
+## Technologies Used
 
-## Installation
+- Frontend: React.js, TailwindCSS
+- Backend: Node.js, Express.js
+- Database: MongoDB
+
+## Prerequisites
+
+- Node.js (v14 or higher)
+- MongoDB (Make sure MongoDB is installed and running)
