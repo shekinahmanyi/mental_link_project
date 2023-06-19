@@ -1,4 +1,3 @@
-# mental_link_project
 # Mental Health Project
 
 This project aims to provide resources and support for individuals dealing with mental health challenges. It offers a collection of information, tools, and resources to promote mental well-being and raise awareness about mental health issues.
