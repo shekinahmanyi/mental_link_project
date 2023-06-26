@@ -10,6 +10,13 @@ function Signup() {
     e.preventDefault();
 
     // Perform signup logic here
+    if (email && password) {
+      // Successful signup
+      alert('Signup successful');
+    } else {
+      // Failed signup
+      alert('Please provide email and password');
+    }
 
     // Reset the form
     setEmail('');
