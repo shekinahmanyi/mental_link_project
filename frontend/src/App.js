@@ -13,7 +13,14 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col justify-between h-screen">
-        <Navbar />
+        <Routes>
+          <Route path="/" element={<Navbar />} />
+          <Route path="/about" element={<Navbar />} />
+          <Route path="/story" element={<Navbar />} />
+          <Route path="/works" element={<Navbar />} />
+          <Route path="/signup" element={<Navbar />} />
+          <Route path="/login" element={<Navbar />} />
+        </Routes>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -21,12 +28,10 @@ function App() {
           <Route path="/works" element={<HowItWorks />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Start />} />
         </Routes>
       </div>
-      <Routes>
-        <Route path="/dashboard" element={<Start />} />
-        {/* Add other routes for the dashboard components */}
-      </Routes>
+     
     </Router>
   );
 }

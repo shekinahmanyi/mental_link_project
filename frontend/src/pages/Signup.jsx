@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 function Signup() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
   const handleSignUp = (e) => {
@@ -12,15 +12,15 @@ function Signup() {
     // Perform signup logic here
     if (email && password) {
       // Successful signup
-      alert('Signup successful');
+      alert("Signup successful");
     } else {
       // Failed signup
-      alert('Please provide email and password');
+      alert("Please provide email and password");
     }
 
     // Reset the form
-    setEmail('');
-    setPassword('');
+    setEmail("");
+    setPassword("");
   };
 
   const togglePasswordVisibility = () => {
@@ -50,7 +50,7 @@ function Signup() {
             </label>
             <div className="relative">
               <input
-                type={showPassword ? 'text' : 'password'}
+                type={showPassword ? "text" : "password"}
                 id="password"
                 className="w-full px-3 py-2 rounded-lg bg-white focus:outline-none focus:shadow-outline"
                 value={password}
@@ -74,7 +74,7 @@ function Signup() {
           </button>
         </form>
         <p className="text-center text-blue-500 mt-4">
-          Already have an account?{' '}
+          Already have an account?{" "}
           <a href="/login" className="underline">
             Sign In
           </a>
