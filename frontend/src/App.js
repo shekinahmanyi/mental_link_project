@@ -8,6 +8,7 @@ import OurStory from "./pages/OurStory";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Start from "./dashboard/main/Start";
+import House from "./dashboard/main/House";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/works" element={<Navbar />} />
           <Route path="/signup" element={<Navbar />} />
           <Route path="/login" element={<Navbar />} />
+          <Route path="/dashboard/*" element={<Start />} />
         </Routes>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,7 +30,7 @@ function App() {
           <Route path="/works" element={<HowItWorks />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Start />} />
+          <Route path="/house" element={<House/>} />
         </Routes>
       </div>
      
