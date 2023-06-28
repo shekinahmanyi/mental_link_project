@@ -1,26 +1,24 @@
-import React, { useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 function Signup() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleSignUp = (e) => {
+  const handleSignIn = (e) => {
     e.preventDefault();
 
-    // Perform signup logic here
-    if (email && password) {
-      // Successful signup
-      alert("Signup successful");
+    // Perform login logic here
+    if (email === 'example@example.com' && password === 'password') {
+      // Successful login
+      navigate('/dashboard');
     } else {
-      // Failed signup
-      alert("Please provide email and password");
+      // Failed login
+      alert('Invalid email or password');
     }
-
-    // Reset the form
-    setEmail("");
-    setPassword("");
   };
 
   const togglePasswordVisibility = () => {
@@ -28,9 +26,9 @@ function Signup() {
   };
 
   return (
-    <div className="pt-24 flex items-center justify-center min-h-screen">
-      <div className="max-w-md w-full p-6 bg-blue-100 rounded-lg shadow-lg">
-        <h2 className="text-3xl text-blue-500 font-bold mb-6">Sign Up</h2>
+    <div className="pt-4 flex items-center justify-center h-screen ">
+      <div className="max-w-md w-full p-6 bg-blue-100 rounded-lg shadow-lg mb-24">
+        <h2 className="text-3xl text-blue-500 font-bold mb-6">Signup</h2>
         <form>
           <div className="mb-4">
             <label htmlFor="email" className="text-blue-500 text-lg">
@@ -50,7 +48,7 @@ function Signup() {
             </label>
             <div className="relative">
               <input
-                type={showPassword ? "text" : "password"}
+                type={showPassword ? 'text' : 'password'}
                 id="password"
                 className="w-full px-3 py-2 rounded-lg bg-white focus:outline-none focus:shadow-outline"
                 value={password}
@@ -68,15 +66,15 @@ function Signup() {
           <button
             type="submit"
             className="w-full py-2 px-4 text-lg bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition duration-300"
-            onClick={handleSignUp}
+            onClick={handleSignIn}
           >
-            Sign Up
+            Sign In
           </button>
         </form>
         <p className="text-center text-blue-500 mt-4">
-          Already have an account?{" "}
+          Already have an account ?{' '}
           <a href="/login" className="underline">
-            Sign In
+            Login
           </a>
         </p>
       </div>
