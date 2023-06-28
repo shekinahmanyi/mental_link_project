@@ -29,8 +29,8 @@ function Navbar() {
 
   return (
     <nav
-    className={`navbar shadow-lg bg-white text-neutral-content ${
-      isScrolled ? "fixed top-0 inset-x-0 z-50" : ""
+    className={`navbar bg-white text-neutral-content ${
+      isScrolled ? "fixed top-0 inset-x-0 z-50  shadow-lg" : ""
     }`}
   >
       <div className="container mx-auto px-6 flex items-center justify-between">
