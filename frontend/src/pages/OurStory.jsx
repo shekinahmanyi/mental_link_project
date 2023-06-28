@@ -17,7 +17,7 @@ function OurStory() {
         community and mental health Professionals.
       </p>
       </div>
-      <p className="text-center mt-6 font-sans">What Some of our Users Say</p>
+      <p className="text-center text-3xl mt-6 font-mono text-gray-600">What Some of our Users Say</p>
       <section className="bg-white py-4">
         <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
           <Fade left duration={4000}>
