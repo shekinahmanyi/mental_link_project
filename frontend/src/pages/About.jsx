@@ -1,33 +1,77 @@
-import React from 'react';
-import Footer from '../components/Footer';
+import React from "react";
+import Footer from "../components/Footer";
+import h5 from "../assets/images/h5.jpg";
+import mission from "../assets/images/mission.jpg";
 
 function About() {
+  
+
   return (
     <div>
-    <div className="p-24 flex flex-col items-center bg-green-100">
-      <div className=" mx-auto px-6 py-8 bg-white rounded-lg shadow-lg">
-        <h2 className="text-3xl font-bold mb-4 text-green-500 text-center">About Us</h2>
-        <p className="text-gray-700 mb-6">
-          Welcome to our mental health app!
-        </p>
-        <p className="text-gray-700 mb-6">
-          Our app is designed to provide support and resources for individuals seeking to improve their mental well-being.
-          Whether you are looking for guided meditations, stress management techniques, or helpful articles, our app has you covered.
-        </p>
-        <p className="text-gray-700 mb-6">
-          Our mission is to empower individuals to take control of their mental health by providing them with accessible tools
-          and a supportive community.
-        </p>
-        <p className="text-gray-700 mb-6">
-          Feel free to explore the app, join our community forums, and engage with our curated content. We believe that
-          taking care of your mental health is a journey, and we're here to support you every step of the way.
-        </p>
-        <p className="text-gray-700">
-          Start your mental wellness journey today with our app!
-        </p>
+      <div className="p-4 flex flex-col items-center">
+        {/* SECTION 1*/}
+        <section className="bg-white py-4">
+          <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
+            <div className="w-full md:w-1/2 mb-8 md:mb-0">
+              <h1 className="text-2xl text-blue-300 mb-2 md:mb-2 font-mono">
+                Who We Are!!
+              </h1>
+              <h2 className="text-2xl text-blue-500 font-bold mb-2 md:mb-4 font-sans">
+                About Us
+              </h2>
+              <p className="text-base text-gray-400">
+                Welcome to our mental health app! Our app is designed to provide
+                support and resources for individuals seeking to improve their
+                mental well-being. Whether you are looking for guided
+                meditations, stress management techniques, or helpful articles,
+                our app has you covered.
+              </p>
+            </div>
+            <div className="w-full md:w-1/2">
+              <img src={h5} alt="Question" className="w-full h-auto" />
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 2*/}
+        <section className="bg-white py-4">
+          <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
+            <div className="w-full md:w-1/2">
+              <img src={mission} alt="Question" className="w-full h-auto" />
+            </div>
+            <div className="w-full md:w-1/2 mb-8 md:mb-0">
+              <h2 className="text-2xl text-blue-500 font-bold mb-4 md:mb-4 font-sans">
+                Our Mission
+              </h2>
+              <p className="text-base text-gray-400">
+                Our mission is to empower individuals to take control of their
+                mental health by providing them with accessible tools and a
+                supportive community.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 3*/}
+        <section className="bg-white py-4">
+          <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
+            <div className="w-full md:w-1/2 mb-8 md:mb-0">
+              <h2 className="text-2xl text-blue-500 font-bold mb-4 md:mb-4 font-sans">
+                Contact Us!
+              </h2>
+              <p className="text-base text-gray-400">
+                Our mission is to empower individuals to take control of their
+                mental health by providing them with accessible tools and a
+                supportive community.
+              </p>
+            </div>
+            <div className="w-full md:w-1/2">
+              <img src={h5} alt="Question" className="w-full h-auto" />
+            </div>
+          </div>
+        </section>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
