@@ -36,7 +36,7 @@ function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="px-5 text-2xl mb-6 mt-6">
           <span className="text-green-500 tracking-tight">
-            Mental<span className="text-gray-800">Link</span>
+            Mental<span className="text-gray-800 font-mono">Link</span>
             <FaLink className="inline pr-2 md:inline-block text-3xl" />
           </span>
         </div>
@@ -51,25 +51,25 @@ function Navbar() {
         <div className="hidden md:flex md:items-center md:space-x-4">
           <Link
             to="/"
-            className="text-lg px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
+            className="text-base px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-lg px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
+            className="text-base px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
           >
             About
           </Link>
           <Link
             to="/story"
-            className="text-lg px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
+            className="text-base px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
           >
             Our Story
           </Link>
           <Link
             to="/works"
-            className="text-lg px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
+            className="text-base px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
           >
             How it Works
           </Link>
