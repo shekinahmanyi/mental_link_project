@@ -1,35 +1,50 @@
-import React from 'react';
-import Footer from '../components/Footer';
+import React from "react";
+import Footer from "../components/Footer";
+import { Fade } from "react-reveal";
+import mission from "../assets/images/mission.jpg";
 
 function OurStory() {
-  const testimonies = [
-    {
-      id: 1,
-      name: "John Doe",
-      testimony: "The mental app has changed my life. It provided me with valuable resources and a supportive community that helped me overcome my challenges."
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-      testimony: "I'm grateful for the mental app. It guided me through various mindfulness exercises and taught me effective coping mechanisms for stress and anxiety."
-    },
-    // Add more testimonies as needed
-  ];
-
   return (
     <div>
-    <div className="pt-24 flex flex-col items-center">
-      <h2 className="text-3xl text-green-500 font-bold mb-6">Our Story</h2>
-      <div className="max-w-lg mx-auto">
-        {testimonies.map((testimony) => (
-          <div key={testimony.id} className="bg-green-100 rounded-lg shadow p-6 mb-4">
-            <h3 className="text-lg font-semibold">{testimony.name}</h3>
-            <p className="text-gray-700">{testimony.testimony}</p>
-          </div>
-        ))}
+      <div className="container text-center mt-14">
+      <h1 className="text-2xl text-blue-500 mb-2 md:mb-3 font-mono">
+        Testimonials!!
+      </h1>
+      <p className="text-base text-gray-500 font-sans">
+        Our mental health app has been a transformative experience for our Users and
+        many others.<br/> It provides a safe and supportive space where individuals
+        can access invaluable <br/> resources and connect with a compassionate
+        community and mental health Professionals.
+      </p>
       </div>
-    </div>
-    <Footer />
+      <p className="text-center mt-6 font-sans">What Some of our Users Say</p>
+      <section className="bg-white py-4">
+        <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
+          <Fade left duration={4000}>
+            <div className="w-full md:w-1/2 mb-8 md:mb-0">
+              <h1 className="text-2xl text-blue-300 mb-2 md:mb-2 font-mono">
+                Who We Are!!
+              </h1>
+              <h2 className="text-2xl text-blue-500 font-bold mb-2 md:mb-4 font-sans">
+                About Us
+              </h2>
+              <p className="text-base text-gray-400">
+                Welcome to our mental health app! Our app is designed to provide
+                support and resources for individuals seeking to improve their
+                mental well-being. Whether you are looking for guided
+                meditations, stress management techniques, or helpful articles,
+                our app has you covered.
+              </p>
+            </div>
+          </Fade>
+          <Fade right duration={4000}>
+            <div className="w-full md:w-1/2">
+              <img src={mission} alt="Question" className="w-full h-auto" />
+            </div>
+          </Fade>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
