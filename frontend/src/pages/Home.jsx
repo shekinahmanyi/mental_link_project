@@ -21,20 +21,20 @@ function Home() {
       <section className="bg-white py-4">
         <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <h2 className="text-3xl text-blue-500 font-bold mb-2 md:mb-4">
+            <h2 className="text-2xl text-blue-500 font-bold mb-4 md:mb-6 font-mono">
               What is Mental Health?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base text-gray-400">
               Mental health is more than just the absence of mental illness. It
               is a state of well-being in which people are able to think, feel,
               and act in ways that are positive and productive. Mental health is
               important for everyone, regardless of age, race, gender, or
               socioeconomic status.
             </p>
-            <h2 className="text-3xl text-blue-500 font-bold mt-12 mb-4 md:mb-8">
+            <h2 className="text-2xl text-blue-500 font-bold mt-12 mb-4 md:mb-8 font-mono">
               How it Affects Us
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base text-gray-400">
               Mental health affects us in many ways. It can affect our thoughts,
               feelings, and behaviors. It can also affect our relationships, our
               work, and our overall quality of life. Mental health plays a
@@ -52,11 +52,16 @@ function Home() {
       {/**SECTION2 */}
       <section className="bg-white py-8">
         <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <h2 className="text-3xl text-green-500 font-bold mb-2 md:mb-4">
+
+        <div className="w-full md:w-1/2">
+            <img src={h2} alt="Help" className="w-full h-auto" />
+          </div>
+
+          <div className="w-full md:w-1/2 mb-8 md:mb-4">
+            <h2 className="text-2xl text-green-500 font-bold mt-12 mb-4 md:mb-4 font-mono">
               How MentalLink Can help You?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base text-gray-400">
               It conveys the idea of connecting people with resources and
               support, and the <b>Link</b> element suggests the platform's
               ability to bridge the gap between individuals and the care they
@@ -65,10 +70,10 @@ function Home() {
               platform on mental health, while the name is also catchy and easy
               to remember.
             </p>
-            <h2 className="text-3xl text-green-500 font-bold mt-12 mb-4 md:mb-8">
-              So,What Next?
+            <h2 className="text-2xl text-green-500 font-bold mt-12 mb-4 md:mb-4 font-mono">
+              So, What Next?
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base text-gray-400">
               Sign in to our platform today and embark on a transformative
               journey towards holistic mental well-being. Gain unlimited access
               to a wealth of invaluable resources, while receiving personalized
@@ -78,20 +83,17 @@ function Home() {
               towards prioritizing your mental health.
             </p>
           </div>
-          <div className="w-full md:w-1/2">
-            <img src={h2} alt="Help" className="w-full h-auto" />
-          </div>
         </div>
       </section>
 
       {/** Did You Know Card Section */}
-      <section className="bg-white py-8 mb-12">
+      <section className="bg-white py-8 mt-8 mb-12">
         <div className="container mx-auto px-4 md:px-8 lg:px-16">
           <div className="bg-green-100 rounded-lg shadow-lg p-6">
-            <h2 className="text-3xl text-blue-500 font-bold mb-4 text-center">
+            <h2 className="text-2xl text-blue-500 font-bold mb-4 text-center font-mono">
               Did You Know?
             </h2>
-            <p className="text-lg text-gray-600 text-center">
+            <p className="text-base text-gray-500 text-center font-mono">
               Prayer can be a powerful tool when facing these mental health
               issues. Taking just 10 seconds to talk to God about your struggles
               can bring comfort and reassurance, knowing that He is always there
