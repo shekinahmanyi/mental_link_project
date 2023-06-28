@@ -14,7 +14,7 @@ function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="px-2 text-2xl mb-6 mt-6">
           <span className="text-sky-500 tracking-tight">
-            Mental<span className="text-green-50">Link </span>
+            Mental<span className="text-green-50 font-mono">Link</span>
             <FaLink className="inline pr-2 md:inline-block text-3xl" />
           </span>
         </div>
