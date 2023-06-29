@@ -19,8 +19,8 @@ function OurStory() {
       </div>
       <p className="text-center text-3xl mt-6 font-mono text-gray-600">What Some of our Users Say</p>
       <section className="bg-white py-4">
+      <Fade left duration={4000}>
         <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
-          <Fade left duration={4000}>
             <div className="w-full md:w-1/2 mb-8 md:mb-0">
               <h1 className="text-2xl text-blue-300 mb-2 md:mb-2 font-mono">
                 Who We Are!!
@@ -36,13 +36,11 @@ function OurStory() {
                 our app has you covered.
               </p>
             </div>
-          </Fade>
-          <Fade right duration={4000}>
             <div className="w-full md:w-1/2">
               <img src={mission} alt="Question" className="w-full h-auto" />
             </div>
-          </Fade>
         </div>
+        </Fade>
       </section>
       <Footer />
     </div>
