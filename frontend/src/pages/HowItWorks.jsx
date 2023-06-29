@@ -12,7 +12,7 @@ function HowItWorks() {
         </h1>
         {/* SECTION 1*/}
         <section className="bg-white py-4">
-        <Slide left duration={4000}>
+        <Slide left duration={1000}>
           <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
               <div className="w-full md:w-1/2">
                 <img src={h7} alt="Question" className="w-full h-auto" />
