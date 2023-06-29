@@ -17,17 +17,18 @@ function Home() {
           />
         </div>
         <section className="bg-white py-4">
-          <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
+          <Fade direction="right">
+            <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-2xl text-blue-500 font-bold mb-4 md:mb-6 font-mono">
                   What is Mental Health?
                 </h2>
                 <p className="text-base text-gray-400">
-                  Mental health is more than just the absence of mental
-                  illness. It is a state of well-being in which people are able
-                  to think, feel, and act in ways that are positive and
-                  productive. Mental health is important for everyone,
-                  regardless of age, race, gender, or socioeconomic status.
+                  Mental health is more than just the absence of mental illness.
+                  It is a state of well-being in which people are able to think,
+                  feel, and act in ways that are positive and productive. Mental
+                  health is important for everyone, regardless of age, race,
+                  gender, or socioeconomic status.
                 </p>
                 <h2 className="text-2xl text-blue-500 font-bold mt-12 mb-4 md:mb-8 font-mono">
                   How it Affects Us
@@ -42,22 +43,20 @@ function Home() {
                   activities we once enjoyed.
                 </p>
               </div>
-          
-           
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 max-w-full">
                 <img src={h1} alt="Question" className="w-full h-auto" />
               </div>
-          
-          </div>
+            </div>
+          </Fade>
         </section>
 
         {/* SECTION2 */}
         <section className="bg-white py-8">
-          <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
+          <Fade direction="left">
+            <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
               <div className="w-full md:w-1/2">
                 <img src={h2} alt="Help" className="w-full h-auto" />
               </div>
-          
               <div className="w-full md:w-1/2 mb-8 md:mb-4">
                 <h2 className="text-2xl text-green-500 font-bold mt-12 mb-4 md:mb-4 font-mono">
                   How MentalLink Can help You?
@@ -85,13 +84,14 @@ function Home() {
                   mental health.
                 </p>
               </div>
-          </div>
+            </div>
+          </Fade>
         </section>
 
         {/* Did You Know Card Section */}
         <section className="bg-white py-8 mt-8 mb-12">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
-            <Slide direction="up" duration={3000}>
+            <Slide direction="up" duration={1000}>
               <div className="bg-green-100 rounded-lg shadow-lg p-6">
                 <h2 className="text-2xl text-blue-500 font-bold mb-4 text-center font-mono">
                   Did You Know?
