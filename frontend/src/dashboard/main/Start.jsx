@@ -58,7 +58,7 @@ function Navbar() {
           </Link>
       </div>
       <div className="container mx-auto px-6 md:hidden bg-indigo-950 fixed bottom-0 inset-x-0 z-50">
-        <div className="border-t border-gray-300  py-4 flex justify-between">
+        <div className="py-4 flex justify-between">
           <Link to="/dashboard/house" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
             <FaHome className="inline text-2xl" />
           </Link>
