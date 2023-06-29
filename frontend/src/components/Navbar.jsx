@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import { FaUser, FaLink, FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,28 +57,36 @@ function Navbar() {
           <Link
             to="/"
             onClick={handleLinkClick}
-            className="text-base px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
+            className={`text-base px-4 py-2 font-medium ${
+              location.pathname === "/" ? "text-blue-500" : `text-gray-700 hover:text-blue-500`
+            }`}
           >
             Home
           </Link>
           <Link
             to="/about"
             onClick={handleLinkClick}
-            className="text-base px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
+            className={`text-base px-4 py-2 font-medium ${
+              location.pathname === "/about" ? "text-blue-500" : `text-gray-700 hover:text-blue-400`
+            }`}
           >
             About
           </Link>
           <Link
             to="/story"
             onClick={handleLinkClick}
-            className="text-base px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
+            className={`text-base px-4 py-2 font-medium ${
+              location.pathname === "/story" ? "text-blue-500" : `text-gray-700 hover:text-blue-400`
+            }`}
           >
             Our Story
           </Link>
           <Link
             to="/works"
             onClick={handleLinkClick}
-            className="text-base px-4 py-2 font-medium text-gray-700 hover:text-blue-400"
+            className={`text-base px-4 py-2 font-medium  ${
+              location.pathname === "/works" ? "text-blue-500" : `text-gray-700 hover:text-blue-400`
+            }`}
           >
             How it Works
           </Link>
@@ -90,7 +100,9 @@ function Navbar() {
           <Link
             to="/login"
             onClick={handleLinkClick}
-            className="border-2 border-green-500 text-green-500 rounded-lg flex items-center justify-center text-base font-medium px-4 py-2 transition duration-300 hover:bg-green-500 hover:text-white"
+            className={`border-2 border-green-500 text-green-500 rounded-lg flex items-center justify-center text-base font-medium px-4 py-2 transition duration-300 ${
+              location.pathname === "/login" ? "bg-green-500 text-white" : "hover:bg-green-500 hover:text-white"
+            }`}
           >
             <FaUser className="mr-2" />
             Login
@@ -103,42 +115,54 @@ function Navbar() {
             <Link
               to="/"
               onClick={handleLinkClick}
-              className="text-base font-sans text-gray-700 hover:text-gray-800"
+              className={`text-base font-sans ${
+                location.pathname === "/" ? "text-blue-500" : `text-gray-700 hover:text-blue-400`
+              }`}
             >
               Home
             </Link>
             <Link
               to="/about"
               onClick={handleLinkClick}
-              className="text-base font-sans text-gray-700 hover:text-gray-800"
+              className={`text-base font-sans ${
+                location.pathname === "/about" ? "text-blue-500" : `text-gray-700 hover:text-blue-400`
+              }`}
             >
               About
             </Link>
             <Link
               to="/story"
               onClick={handleLinkClick}
-              className="text-base font-sans text-gray-700 hover:text-gray-800"
+              className={`text-base font-sans ${
+                location.pathname === "/story" ? "text-blue-500" : `text-gray-700 hover:text-blue-400`
+              }`}
             >
               Our Story
             </Link>
             <Link
               to="/works"
               onClick={handleLinkClick}
-              className="text-base font-sans text-gray-700 hover:text-gray-800"
+              className={`text-base font-sans ${
+                location.pathname === "/works" ? "text-blue-500" : `text-gray-700 hover:text-blue-400`
+              }`}
             >
               How it Works
             </Link>
             <Link
               to="/signup"
               onClick={handleLinkClick}
-              className="text-base font-sans text-blue-500 hover:text-blue-500"
+              className={`text-base font-sans ${
+                location.pathname === "/signup" ? "text-blue-500" : `text-gray-700 hover:text-blue-400`
+              }`}
             >
               Sign Up
             </Link>
             <Link
               to="/login"
               onClick={handleLinkClick}
-              className="text-base font-sans text-green-500 hover:text-green-600 flex items-center"
+              className={`text-base font-sans text-green-500 ${
+                location.pathname === "/login" ? "text-green-600" : "hover:text-green-600"
+              } flex items-center`}
             >
               Login
             </Link>
