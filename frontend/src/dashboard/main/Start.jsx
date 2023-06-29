@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaLink, FaHome, FaSearch, FaLightbulb, FaBook, FaUsers } from "react-icons/fa";
+import { FaLink, FaHome,FaSignal,FaLightbulb, FaBook, FaUsers,FaCog } from "react-icons/fa";
+
 
 function Navbar() {
   return (
@@ -14,57 +15,63 @@ function Navbar() {
         </div>
         <div className="hidden md:flex md:items-center md:space-x-4">
           <Link
-            to="/house"
+            to="/dashboard/house"
             className="text-base px-4 py-2 font-medium text-green-50"
           >
             <FaHome className="inline pr-1 text-2xl" />
             Home
           </Link>
           <Link
-            to="/explore"
+            to="/dashboard/explore"
             className="text-base px-4 py-2 font-medium text-green-50"
           >
-            <FaSearch className="inline pr-1 text-2xl" />
+            <FaSignal className="inline pr-1 text-2xl" />
             Explore
           </Link>
           <Link
-            to="/journal"
+            to="/dashboard/journal"
             className="text-base px-4 py-2 font-medium text-green-50"
           >
             <FaBook className="inline pr-1 text-2xl" />
             My Journal
           </Link>
           <Link
-            to="/insights"
+            to="/dashboard/insights"
             className="text-base px-4 py-2 font-medium text-green-50"
           >
             <FaLightbulb className="inline pr-1 text-2xl" />
             Insights
           </Link>
           <Link
-            to="/community"
+            to="/dashboard/community"
             className="text-base px-4 py-2 font-medium text-green-50"
           >
             <FaUsers className="inline pr-1 text-2xl" />
             Community
           </Link>
         </div>
+        <Link
+            to="/dashboard/settings"
+            className="text-base px-4 py-2 font-medium text-green-50"
+          >
+            <FaCog className="inline pr-1 text-2xl" />
+          </Link>
       </div>
       <div className="container mx-auto px-6 md:hidden bg-indigo-950 fixed bottom-0 inset-x-0 z-50">
         <div className="border-t border-gray-300  py-4 flex justify-between">
-          <Link to="/" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
+          <Link to="/dashboard/house" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
             <FaHome className="inline text-2xl" />
           </Link>
-          <Link to="/about" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
-            <FaLink className="inline text-2xl" />
+          <Link to="/dashboard/about" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
+            <FaSignal className="inline text-2xl" />
           </Link>
-          <Link to="/story" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
+          <Link to="/dashboard/story" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
             <FaBook className="inline text-2xl" />
           </Link>
-          <Link to="/works" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
+          <Link to="/dashboard/works" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
             <FaLightbulb className="inline text-2xl" />
           </Link>
-          <Link to="/community" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
+          <Link to="/dashboard/community" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
             <FaUsers className="inline text-2xl" />
           </Link>
         </div>
