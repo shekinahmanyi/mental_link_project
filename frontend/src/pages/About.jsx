@@ -11,8 +11,8 @@ function About() {
         {/* SECTION 1*/}
        
           <section className="bg-white py-4">
+          <Fade left duration={4000}>
             <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
-            <Fade left duration={4000}>
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
                 <h1 className="text-2xl text-blue-300 mb-2 md:mb-2 font-mono">
                   Who We Are!!
@@ -28,25 +28,21 @@ function About() {
                   our app has you covered.
                 </p>
               </div>
-              </Fade>
-              <Fade right duration={4000}>
               <div className="w-full md:w-1/2">
                 <img src={h5} alt="Question" className="w-full h-auto" />
               </div>
-              </Fade>
             </div>
+            </Fade>
           </section>
        
 
         {/* SECTION 2*/}
           <section className="bg-white py-4">
+          <Fade left duration={4000}>
             <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
-            <Fade left duration={4000}>
               <div className="w-full md:w-1/2">
                 <img src={mission} alt="Question" className="w-full h-auto" />
               </div>
-              </Fade>
-              <Fade right duration={4000}>
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-2xl text-blue-500 font-bold mb-4 md:mb-4 font-sans">
                   Our Mission
@@ -57,15 +53,15 @@ function About() {
                   supportive community and Mental-Health Professionals!
                 </p>
               </div>
-              </Fade>
             </div>
+            </Fade>
           </section>
    
 
         {/* SECTION 3*/}
           <section className="bg-white py-4">
+          <Fade left duration={4000}>
             <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
-            <Fade left duration={4000}>
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-2xl text-blue-500 font-bold mb-4 md:mb-4 font-sans">
                   Contact Us!
@@ -76,13 +72,11 @@ function About() {
                   supportive community.
                 </p>
               </div>
-              </Fade>
-              <Fade right duration={4000}>
               <div className="w-full md:w-1/2">
                 <img src={h5} alt="Question" className="w-full h-auto" />
               </div>
-              </Fade>
             </div>
+            </Fade>
           </section>
       </div>
       <Footer />
