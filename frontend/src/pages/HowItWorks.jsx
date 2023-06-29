@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import h7 from "../assets/images/h7.jpg";
 
 function HowItWorks() {

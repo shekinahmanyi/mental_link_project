@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import h5 from "../assets/images/h5.jpg";
 import mission from "../assets/images/mission.jpg";
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 function About() {
   return (

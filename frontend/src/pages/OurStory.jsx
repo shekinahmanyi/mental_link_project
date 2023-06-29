@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import mission from "../assets/images/mission.jpg";
 
 function OurStory() {

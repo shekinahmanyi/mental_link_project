@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import h1 from "../assets/images/h1.png";
 import h2 from "../assets/images/h2.png";
 import h4 from "../assets/images/h4.jpg";
@@ -18,7 +18,7 @@ function Home() {
         </div>
         <section className="bg-white py-4">
           <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
-            <Fade left duration={4000}>
+            <Fade direction="left" duration={4000}>
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-2xl text-blue-500 font-bold mb-4 md:mb-6 font-mono">
                   What is Mental Health?
@@ -44,7 +44,7 @@ function Home() {
                 </p>
               </div>
             </Fade>
-            <Fade right duration={4000}>
+            <Fade direction="right" duration={4000}>
               <div className="w-full md:w-1/2">
                 <img src={h1} alt="Question" className="w-full h-auto" />
               </div>
@@ -55,12 +55,12 @@ function Home() {
         {/* SECTION2 */}
         <section className="bg-white py-8">
           <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
-            <Fade left duration={4000}>
+            <Fade direction="left" duration={4000}>
               <div className="w-full md:w-1/2">
                 <img src={h2} alt="Help" className="w-full h-auto" />
               </div>
             </Fade>
-            <Fade right duration={4000}>
+            <Fade direction="right" duration={4000}>
               <div className="w-full md:w-1/2 mb-8 md:mb-4">
                 <h2 className="text-2xl text-green-500 font-bold mt-12 mb-4 md:mb-4 font-mono">
                   How MentalLink Can help You?
@@ -95,7 +95,7 @@ function Home() {
         {/* Did You Know Card Section */}
         <section className="bg-white py-8 mt-8 mb-12">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
-            <Fade bottom duration={4000}>
+            <Fade direction="bottom" duration={4000}>
               <div className="bg-green-100 rounded-lg shadow-lg p-6">
                 <h2 className="text-2xl text-blue-500 font-bold mb-4 text-center font-mono">
                   Did You Know?
