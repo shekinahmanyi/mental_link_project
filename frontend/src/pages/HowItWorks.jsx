@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 import h7 from "../assets/images/h7.jpg";
 import login from "../assets/images/login.jpg";
 import explore from "../assets/images/explore.jpg";
-import community from "../assets/images/community.jpg";
+import h12 from "../assets/images/h12.jpg";
 
 
 function HowItWorks() {
@@ -14,7 +14,6 @@ function HowItWorks() {
         <h1 className="text-3xl text-center font-mono text-gray-600">
           Let's Get Started With How it works!!
         </h1>
-
         {/* SECTION 1*/}
         <section className="bg-white py-4">
           <Slide left duration={1000}>
@@ -109,7 +108,7 @@ function HowItWorks() {
                 </p>
               </div>
               <div className="w-full md:w-1/2">
-                <img src={community} alt="Question" className="w-full h-auto" />
+                <img src={h12} alt="Question" className="w-full h-auto" />
               </div>
             </div>
           </Slide>
