@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import h7 from "../assets/images/h7.jpg";
 
 function HowItWorks() {
@@ -12,13 +12,11 @@ function HowItWorks() {
         </h1>
         {/* SECTION 1*/}
         <section className="bg-white py-4">
+        <Slide left duration={4000}>
           <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-wrap items-center">
-            <Fade left duration={4000}>
               <div className="w-full md:w-1/2">
                 <img src={h7} alt="Question" className="w-full h-auto" />
               </div>
-            </Fade>
-            <Fade right duration={4000}>
               <div className="w-full md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-2xl font-bold mb-4 md:mb-4 font-sans">
                   01.
@@ -33,8 +31,8 @@ function HowItWorks() {
                   our resources.
                 </p>
               </div>
-            </Fade>
           </div>
+          </Slide>
         </section>
       </div>
       <Footer />
