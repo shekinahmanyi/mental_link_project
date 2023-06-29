@@ -15,7 +15,7 @@ function Navbar() {
         </div>
         <div className="hidden md:flex md:items-center md:space-x-4">
           <Link
-            to="/dashboard/house"
+            to="/dashboard"
             className="text-base px-4 py-2 font-medium text-green-50"
           >
             <FaHome className="inline pr-1 text-2xl" />
@@ -59,7 +59,7 @@ function Navbar() {
       </div>
       <div className="container mx-auto px-6 md:hidden bg-indigo-950 fixed bottom-0 inset-x-0 z-50">
         <div className="py-4 flex justify-between">
-          <Link to="/dashboard/house" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
+          <Link to="/dashboard" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
             <FaHome className="inline text-2xl" />
           </Link>
           <Link to="/dashboard/about" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
