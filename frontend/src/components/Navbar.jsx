@@ -103,44 +103,43 @@ function Navbar() {
             <Link
               to="/"
               onClick={handleLinkClick}
-              className="text-base font-medium text-gray-700 hover:text-gray-800"
+              className="text-base font-sans text-gray-700 hover:text-gray-800"
             >
               Home
             </Link>
             <Link
               to="/about"
               onClick={handleLinkClick}
-              className="text-base font-medium text-gray-700 hover:text-gray-800"
+              className="text-base font-sans text-gray-700 hover:text-gray-800"
             >
               About
             </Link>
             <Link
               to="/story"
               onClick={handleLinkClick}
-              className="text-base font-medium text-gray-700 hover:text-gray-800"
+              className="text-base font-sans text-gray-700 hover:text-gray-800"
             >
               Our Story
             </Link>
             <Link
               to="/works"
               onClick={handleLinkClick}
-              className="text-base font-medium text-gray-700 hover:text-gray-800"
+              className="text-base font-sans text-gray-700 hover:text-gray-800"
             >
               How it Works
             </Link>
             <Link
               to="/signup"
               onClick={handleLinkClick}
-              className="text-base font-medium text-gray-700 hover:text-gray-800"
+              className="text-base font-sans text-blue-500 hover:text-blue-500"
             >
               Sign Up
             </Link>
             <Link
               to="/login"
               onClick={handleLinkClick}
-              className="text-base font-medium text-green-500 hover:text-green-600 flex items-center"
+              className="text-base font-sans text-green-500 hover:text-green-600 flex items-center"
             >
-              <FaUser className="mr-2" />
               Login
             </Link>
           </div>
