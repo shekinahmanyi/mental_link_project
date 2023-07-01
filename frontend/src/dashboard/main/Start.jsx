@@ -5,7 +5,7 @@ import { FaLink, FaHome,FaSignal,FaLightbulb, FaBook, FaUsers,FaCog } from "reac
 
 function Navbar() {
   return (
-    <nav className="navbar mb-2 shadow-lg bg-indigo-950 text-neutral-content fixed top-0 inset-x-0 z-50">
+    <nav className="navbar mb-2 shadow-lg bg-purple-900 text-neutral-content fixed top-0 inset-x-0 z-50">
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="px-2 text-2xl mb-6 mt-6">
           <span className="text-sky-500 tracking-tight">
@@ -57,7 +57,7 @@ function Navbar() {
             <FaCog className="inline pr-1 text-2xl" />
           </Link>
       </div>
-      <div className="container mx-auto px-6 md:hidden bg-indigo-950 fixed bottom-0 inset-x-0 z-50">
+      <div className="container mx-auto px-6 md:hidden bg-purple-900 fixed bottom-0 inset-x-0 z-50">
         <div className="py-4 flex justify-between">
           <Link to="/dashboard" className="flex flex-col items-center justify-center text-base font-medium text-green-50">
             <FaHome className="inline text-2xl" />
