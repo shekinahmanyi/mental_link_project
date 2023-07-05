@@ -9,6 +9,11 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Start from "./dashboard/main/Start";
 import House from "./dashboard/main/House";
+import Explore from "./dashboard/main/Explore";
+import Journal from "./dashboard/main/Journal";
+import Insights from "./dashboard/main/Insights";
+import Community from "./dashboard/main/Community";
+import Settings from "./dashboard/main/Settings";
 
 function App() {
   return (
@@ -31,6 +36,11 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<House/>} />
+          <Route path="/dashboard/explore" element={<Explore/>} />
+          <Route path="/dashboard/journal" element={<Journal/>} />
+          <Route path="/dashboard/insights" element={<Insights/>} />
+          <Route path="/dashboard/community" element={<Community/>} />
+          <Route path="/dashboard/settings" element={<Settings/>} />
         </Routes>
       </div>
      
