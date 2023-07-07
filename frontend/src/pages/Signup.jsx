@@ -1,23 +1,18 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 function Signup() {
-  const navigate = useNavigate();
+ 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleSignIn = (e) => {
+  const handleSignUp = (e) => {
     e.preventDefault();
-
-    // Perform login logic here
-    if (email === 'example@example.com' && password === 'password') {
-      // Successful login
-      navigate('/dashboard');
+    if (email && password) {
+      alert('Signup Successful');
     } else {
-      // Failed login
-      alert('Invalid email or password');
+      alert('Signup Failed');
     }
   };
 
@@ -66,13 +61,13 @@ function Signup() {
           <button
             type="submit"
             className="w-full py-2 px-4 text-lg bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition duration-300"
-            onClick={handleSignIn}
+            onClick={handleSignUp}
           >
-            Sign In
+            Sign Up
           </button>
         </form>
         <p className="text-center text-blue-500 mt-4">
-          Already have an account ?{' '}
+          Already have an account?{' '}
           <a href="/login" className="underline">
             Login
           </a>

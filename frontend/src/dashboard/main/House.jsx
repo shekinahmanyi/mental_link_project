@@ -7,7 +7,7 @@ function House() {
   return (
     <div className="container bg-white max-auto">
       <div className="pt-24 flex flex-col">
-        <h1 className="text-2xl pt-8 px-16 ml-16">Hello Shekinah!!</h1>
+        <h1 className="text-2xl pt-8 px-16 ml-16 font-mono text-center">Welcome Back Shekinah!!</h1>
         
       </div>
       <section className="py-8 mt-8 mb-12">
